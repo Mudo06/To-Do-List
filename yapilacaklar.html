@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="yapilacaklar.css">
+
+    <title>Yapılacaklar Listesi</title>
+</head>
+
+<body>
+    <script src="yapilacaklar.js"></script>
+
+    <div class="containerr">
+
+        <input type="text" id="taskInput" class="form-control frc" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg" placeholder="Yapılacak İş Ekle">
+
+        <div>
+            <button class="btn btn-light" onclick="renderTasks(tasks)">Hepsi</button>
+            <button class="btn btn-light " onclick="activeTasks()">Devam Eden</button>
+            <button class="btn btn-light " onclick="complatedTasks()">Biten</button>
+            <button class="btn btn-dark " onclick="clearAll()">Temizle</button>
+        </div>
+
+        <div class="line">——————————————————————</div>
+
+        <div id="taskList">__Yapılacaklar Listesi Boş__</div>
+
+    </div>
+    
+</body>
+</html>
+
